@@ -18,7 +18,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // Check authentication status on app load
     useEffect(() => {
         const checkAuth = async () => {
-            const response = await fetch('http://localhost:5000/api/authenticated', {
+            const response = await fetch('http://localhost:5000/api/authenticated' || 'https://vite-app1.onrender.com/api/authenticated', {
                 method: 'GET',
                 credentials: 'include', // Include cookies for session management
             });
