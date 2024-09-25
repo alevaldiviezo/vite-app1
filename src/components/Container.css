@@ -1,0 +1,11 @@
+/* src/components/Container.css */
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem; /* Add padding around the content */
+    background-color: #fff; /* Optional: Set a background color */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}

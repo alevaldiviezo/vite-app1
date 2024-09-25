@@ -1,0 +1,15 @@
+/* src/index.css or src/App.css */
+
+/* CSS Reset */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #f4f4f4; /* Optional: Set a background color */
+}
+
+/* Other styles can go here */
