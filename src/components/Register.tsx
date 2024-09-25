@@ -14,7 +14,7 @@ const Register: React.FC = () => {
         setMessage('');
 
         try {
-            const response = await fetch('http://localhost:5000/api/register' || 'https://vite-app1.onrender.com/api/register', {
+            const response = await fetch('http://localhost:5000/api/register' || 'https://serverviteapp.onrender.com/api/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

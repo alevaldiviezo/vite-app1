@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
     const navigate = useNavigate(); // Initialize useNavigate
 
     const handleLogout = async () => {
-        await fetch('http://localhost:5000/api/logout' || 'https://vite-app1.onrender.com/api/logout', {
+        await fetch('http://localhost:5000/api/logout' || 'https://serverviteapp.onrender.com/api/logout', {
             method: 'POST',
             credentials: 'include', // Include cookies for session management
         });
