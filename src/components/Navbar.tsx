@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
     
 
     const handleLogout = async () => {
-        await fetch('http://localhost:5000/api/logout', {
+        await fetch('https://serverviteapp.onrender.com/api/logout', {
             method: 'POST',
             credentials: 'include', // Include cookies for session management
         });
