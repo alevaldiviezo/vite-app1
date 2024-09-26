@@ -6,7 +6,7 @@ const Home: React.FC = () => {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        fetch('https://serverviteapp.onrender.com/api')
+        fetch('http://localhost:5000/api')
             .then(response => response.json())
             .then(data => setMessage(data.message))
             .catch(error => console.error('Error fetching data:', error));

@@ -21,10 +21,14 @@
 }
 
 .navbar-item {
-    color: white;
+    color: green;
     text-decoration: none;
     font-weight: bold;
     margin-right: 20px; /* Space between items */
+}
+
+.navbar-item a {
+    color: whitesmoke;
 }
 
 .auth-buttons {
@@ -39,6 +43,11 @@
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navbar-message {
+    color: greenyellow;
+    font-weight: bold;
 }
 
 .navbar-button:hover {

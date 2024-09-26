@@ -4,11 +4,12 @@ import { useAuth } from '../AuthContext'; // Import useAuth
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
-    const { isAuthenticated, logout } = useAuth(); // Get authentication state
+    const { isAuthenticated, logout, username } = useAuth(); // Get authentication state
     const navigate = useNavigate(); // Initialize useNavigate
+    
 
     const handleLogout = async () => {
-        await fetch('https://serverviteapp.onrender.com/api/logout', {
+        await fetch('http://localhost:5000/api/logout', {
             method: 'POST',
             credentials: 'include', // Include cookies for session management
         });
@@ -29,7 +30,10 @@ const Navbar: React.FC = () => {
             </ul>
             <div className="auth-buttons">
                 {isAuthenticated ? (
+                    <>
+                    <p className='navbar-message'>Welcome, {username}</p>
                     <button className="navbar-button" onClick={handleLogout}>Logout</button>
+                    </>
                 ) : (
                     <>
                         <Link to="/login">

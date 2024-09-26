@@ -11,8 +11,8 @@ const Services: React.FC = () => {
     useEffect(() => {
         const fetchServices = async () => {
             try {
-                const response = await fetch('https://serverviteapp.onrender.com/api/services', {
-                    credentials: 'omit', // Include credentials for session management
+                const response = await fetch('http://localhost:5000/api/services', {
+                    credentials: 'include', // Include credentials for session management
                 });
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

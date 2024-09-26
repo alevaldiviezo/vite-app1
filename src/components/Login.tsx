@@ -16,7 +16,7 @@ const Login: React.FC = () => {
         setMessage('');
 
         try {
-            const response = await fetch('https://serverviteapp.onrender.com/api/login', {
+            const response = await fetch('http://localhost:5000/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const Login: React.FC = () => {
 
             const data = await response.json();
             if (response.ok) {
-                login(); // Call login function on successful login
+                login(username); // Call login function on successful login
                 setMessage('Login successful!');
                 navigate('/services'); // Navigate to /services
             } else {
